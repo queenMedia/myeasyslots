@@ -50,7 +50,7 @@ body {
 .header {
   background: url('./assets/bg-main-min.png');
   background-size: cover;
-  height: 1258px;
+  height: 100vh;
 }
 
 .header .top {
@@ -61,14 +61,14 @@ body {
 
 .header .logo-container {
   display: inline-block;
-  margin-top: 99px;
-  padding: 40px 78px 40px 136px;
+  margin-top: 50px;
+  padding: 20px 48px 20px 56px;
   background-color: var(--accent-color-blue);
   border-radius: 0 0 20px 0;
 }
 
 .header .logo-container img {
-  width: 551px;
+  width: 250px;
 }
 
 .header .nav-header {
@@ -76,21 +76,22 @@ body {
   height: fit-content;
   margin-top: 22px;
   background-color: var(--accent-color-orange);
+  width: 100%;
 }
 
 .header .nav-header ul {
   display: flex;
-  gap: 147px;
-  margin: 28px 131px;
+  gap: 50px;
+  margin: 14px 50px;
 }
 
 .header .nav-header ul li a {
   font-family: var(--font-inter);
-  font-size: 36px;
+  font-size: 15px;
   font-weight: 500;
-  line-height: 44px;
+  line-height: 20px;
   color: var(--standard-white);
-  border-bottom: 3px solid var(--standard-white);
+  border-bottom: 2px solid var(--standard-white);
 }
 
 .header .info-flex {
@@ -103,7 +104,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 60px;
-  width: 868px;
+  width: 45%;
   margin-top: 76px;
 }
 
@@ -118,31 +119,31 @@ body {
 
 .header .info .block p {
   font-family: var(--font-noto);
-  font-size: 36px;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 48px;
+  line-height: 20px;
   color: var(--standard-white);
 }
 
 .header .info .block .title {
   font-family: var(--font-noto);
-  font-size: 48px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 64px;
+  line-height: 26px;
   padding-bottom: 24px;
-  border-bottom: 5px solid var(--accent-color-orange);
+  border-bottom: 3px solid var(--accent-color-orange);
   text-wrap: nowrap;
 }
 
 .header .info .button {
   font-family: var(--font-noto);
-  font-size: 36px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 20px;
   text-align: center;
   color: var(--standard-white);
   width: fit-content;
-  padding: 30px 26px;
+  padding: 30px 36px;
   border-radius: 20px;
   border: 1px solid var(--standard-white);
   background-color: #45BE91E5;
@@ -151,28 +152,28 @@ body {
 .header .proposition {
   display: flex;
   flex-direction: column;
-  width: 528px;
+  width: 300px;
   border-radius: 20px;
   background-color: var(--standard-white);
-  margin-right: 127px;
+  margin-right: 60px;
 }
 
 .header .proposition img {
   border-radius: 20px 20px 0 0;
-  width: 528px;
+  width: 100%;
 }
 
 .header .proposition .text {
   font-family: var(--font-noto);
-  font-size: 32px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 43px;
+  line-height: 21px;
   text-align: center;
   color: var(--accent-color-blue);
   border: 3px solid var(--accent-color-blue);
   border-radius: 0 0 20px 20px;
   border-top: none;
-  margin: 30px 20px 13px;
+  margin: 20px 10px 7px;
 }
 
 .header .proposition .text p {
@@ -200,4 +201,195 @@ body {
   color: var(--accent-color-green);
   font-weight: 700;
   margin-top: 25px;
+}
+
+section.about {
+  background: url('./assets/bg-pattern.jpeg');
+  background-size: 10%;
+}
+
+section.about .title {
+  display: flex;
+}
+
+section.about .title div {
+  width: 30%;
+}
+
+section.about h2 {
+  width: 70%;
+  font-family: var(--font-inter);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  color: var(--accent-color-blue);
+  margin: 14px 30px;
+}
+
+section.about .about {
+  display: flex;
+  width: 30%;
+  border-radius: 0 0 20px 0;
+  box-shadow: 4px 4px 10px 0 #00000040;
+}
+
+section.about .about .img {
+  background: url("./assets/bg-unique.jpeg");
+  background-size: cover;
+  width: 500px;
+  opacity: 0.5;
+}
+
+section.about .about .text {
+  padding: 15px 5px 12px 18px;
+  background-color: var(--standard-white);
+  border-radius: 0 0 20px 0;
+}
+
+section.about .about .text h3 {
+  font-family: var(--font-inter);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  color: var(--accent-color-blue);
+}
+
+section.about .about .text h3 span {
+  font-weight: 700;
+  color: var(--accent-color-green);
+}
+
+section.about .about .text p {
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: var(--accent-color-blue);
+}
+
+section.about .container {
+  display: flex;
+  gap: 20px;
+}
+
+section.about .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+section.about .cards.top,
+section.about .cards.bottom {
+  height: 315px;
+  margin-right: 50px;
+}
+
+section.about .cards .card h3 {
+  font-family: var(--font-inter);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+section.about .cards .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 8px 10px 0 #00000040;
+}
+
+section.about .cards.top .card .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: var(--accent-color-orange);
+  /*rotate: 45deg;*/
+}
+
+section.about .cards.top .card:nth-child(2) .color {
+  background-color: var(--accent-color-red);
+}
+
+section.about .cards.top .card:nth-child(3) .color {
+  background-color: var(--accent-color-violet);
+}
+
+section.about .cards.top .card:last-child .color {
+  background-color: var(--accent-color-blue);
+}
+
+section.about .cards.top .card h3 {
+  color: var(--standard-white);
+}
+
+section.about .cards .card:first-child {
+  border-radius: 20px 0 0 20px;
+}
+
+section.about .cards .card:last-child {
+  border-radius: 0 20px 20px 0;
+}
+
+section.about .cards.top .card:first-child {
+  background: url("./assets/bacarrat-bg-min.png") center;
+  background-size: cover;
+}
+
+section.about .cards.top .card:nth-child(2) {
+  background: url("./assets/dragonfire-min.png") center;
+  background-size: cover;
+}
+
+section.about .cards.top .card:nth-child(3) {
+  background: url("./assets/poker-min.png") center;
+  background-size: cover;
+}
+
+section.about .cards.top .card:last-child {
+  background: url("./assets/craps-min.png") center;
+  background-size: cover;
+}
+
+section.about .cards.bottom {
+  display: none;
+}
+
+section.about .cards.bottom .card {
+  background-color: var(--standard-white);
+}
+
+section.about .cards.bottom .card .bottom {
+  margin: 32px 11px;
+  border-radius: 0 0 20px 20px;
+  border: 3px solid var(--accent-color-orange);
+  border-top: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.about .cards.bottom .card:nth-child(2) .bottom {
+  border-color: var(--accent-color-red);
+}
+
+section.about .cards.bottom .card:nth-child(3) .bottom {
+  border-color: var(--accent-color-violet);
+}
+
+section.about .cards.bottom .card:last-child .bottom {
+  border-color: var(--accent-color-blue);
+}
+
+section.about .cards .card .bottom p {
+  margin-top: 15px;
+  padding: 0 15px;
+  font-family: var(--font-inter);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: center;
 }
