@@ -34,6 +34,8 @@ button {
 
 body {
   width: 100%;
+  background: url('./assets/bg-pattern.jpeg');
+  background-size: 10%;
 
   --standard-white: #fff;
   --standard-black: #000;
@@ -203,11 +205,6 @@ body {
   margin-top: 25px;
 }
 
-section.about {
-  background: url('./assets/bg-pattern.jpeg');
-  background-size: 10%;
-}
-
 section.about .title {
   display: flex;
 }
@@ -219,9 +216,9 @@ section.about .title div {
 section.about h2 {
   width: 70%;
   font-family: var(--font-inter);
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
-  line-height: 50px;
+  line-height: 40px;
   color: var(--accent-color-blue);
   margin: 14px 30px;
 }
@@ -392,4 +389,107 @@ section.about .cards .card .bottom p {
   font-weight: 500;
   line-height: 14px;
   text-align: center;
+}
+
+section.best {
+  margin-top: 50px;
+}
+
+section.best .red {
+  width: 30%;
+  display: block;
+}
+
+section.best .orange {
+  width: 10%;
+  display: block;
+}
+
+section.best h2 {
+  font-family: var(--font-inter);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-left: 50px;
+  margin-top: 15px;
+  color: var(--accent-color-blue);
+}
+
+section.best .cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin: 20px 40px 30px;
+}
+
+section.best .cards .card {
+  height: 240px;
+  border-radius: 10px;
+}
+
+section.best .cards .card:first-child {
+  background: url("./assets/card1-min.png") center;
+  background-size: cover;
+}
+
+section.best .cards .card:nth-child(2) {
+  background: url("./assets/card2.jpeg") center;
+  background-size: cover;
+}
+
+section.best .cards .card:nth-child(3) {
+  background: url("./assets/card3-min.png") center;
+  background-size: cover;
+}
+
+section.best .cards .card:nth-child(4) {
+  background: url("./assets/card4-min.png") center;
+  background-size: cover;
+}
+
+section.best .cards .card:nth-child(5) {
+  background: url("./assets/card5-min.png") center;
+  background-size: cover;
+}
+
+section.best .cards .card:last-child {
+  background: url("./assets/card6-min.png") center;
+  background-size: cover;
+}
+
+section.best .cards .card h3 {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: var(--standard-white);
+  background-color: var(--accent-color-orange);
+}
+
+section.best .cards .card .border{
+  height: 210px;
+  position: relative;
+  border: 1px solid var(--accent-color-orange);
+  margin: 15px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+section.best .cards .card button {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  color: var(--standard-white);
+  background-color: var(--accent-color-orange);
+  border-radius: 5px;
+  padding: 10px 18px;
+}
+
+section.best .green {
+  width: 80%;
 }
