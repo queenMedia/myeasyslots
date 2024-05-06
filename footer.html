@@ -61,8 +61,11 @@
                 </div>
             </div>
         </div>
+        </div>
         <div class="formWrapper">
-            <form id="form" action="#">
+
+
+            <form id="form" action="#" class="half-container">
                 <h3>Contact us!</h3>
                 <div class="formRow">
                     <div class="formItem">
@@ -86,10 +89,13 @@
                 </div>
             </form>
             <div class="contactBanner">
-                <p>If you have any questions, feel free to contact us anytime. Our team is available 24/7 to assist you.
+                <p>If you have any questions, feel free to contact us anytime. Our team is available 24/7 to assist
+                    you.
                 </p>
             </div>
-        </div>
+
+
+
     </section>
     <footer class="footer">
         <div class="footerContainer">
@@ -276,6 +282,9 @@
     <style>
         :root {
             --footer-accent: rgba(34, 56, 191, 1);
+            --container: 80%;
+            --bit-text: 40px;
+            --lil-text: 27px;
         }
 
         body {
@@ -302,7 +311,7 @@
         } */
 
         section.contact .h2 {
-            font-size: 40px;
+            font-size: var(--bit-text);
             /*adapt*/
             flex: 1;
             text-align: center;
@@ -315,7 +324,7 @@
         } */
 
         p.contactText {
-            font-size: 27px;
+            font-size: var(--lil-text);
             text-align: center;
             color: var(--footer-accent);
         }
@@ -357,6 +366,71 @@
             align-self: center;
         }
 
+        .formWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 120px;
+
+        }
+
+        .formWrapper .contactBanner {
+            width: 50%;
+            height: 100%;
+            height: 505px;
+            background: url(./footerassets/contactGirl.jpg) no-repeat center;
+            position: relative;
+        }
+
+        .formWrapper .contactBanner p {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            color: white;
+            font-size: 30px;
+            width: 300px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .formWrapper {
+            background: rgba(34, 56, 191, 1)
+        }
+
+        .formRow {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+
+
+
+        .formItem {
+            display: flex;
+            margin: 0 10px;
+            flex-direction: column;
+        }
+
+        .formItem label {
+            font-size: var(--lil-text);
+            margin-bottom: 12px;
+        }
+
+        .formItem input {
+            height: 52px;
+            width: 300px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            padding: 0 10px;
+        }
+
+        form h3 {
+            font-size: var(--bit-text);
+            margin-bottom: 30px;
+        }
+
         footer {
             color: white;
             text-align: center;
@@ -370,8 +444,12 @@
 
         .footerContainer {
             /* adapt */
-            width: 80%;
+            width: var(--container);
             margin: 0 auto;
+        }
+
+        .half-container {
+            margin-left: calc((100% - var(--container))/2);
         }
 
         footer::after {
