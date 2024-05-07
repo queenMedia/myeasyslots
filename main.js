@@ -15,7 +15,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  function switchLogo() {
+    const logo = document.querySelector('img[alt="logo"]');
+    if (window.innerWidth <= 600) {
+      logo.src = "./assets/favico.png";
+      logo.classList.add("mobileLogo");
+    } else {
+      logo.src = "./assets/logo.png";
+      logo.classList.remove("mobileLogo");
+      // logo.style.width = "unset";
+    }
+  }
+
   document.addEventListener("scroll", changeNavPosition);
+  window.addEventListener("resize", switchLogo);
+  switchLogo();
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
